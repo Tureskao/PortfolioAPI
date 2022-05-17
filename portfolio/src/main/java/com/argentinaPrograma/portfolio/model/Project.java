@@ -18,18 +18,18 @@ public class Project {
     @Basic
     private String projTitle;
     private String projDescription;
-    private String projURL;
+    private String projUrl;
     private int projDate;
     private String projImgUrl;
 
     public Project() {
     }
 
-    public Project(Long projId, String projTitle, String projDescription, String projURL, int projDate, String projImgUrl) {
+    public Project(Long projId, String projTitle, String projDescription, String projUrl, int projDate, String projImgUrl) {
         this.projId = projId;
         this.projTitle = projTitle;
         this.projDescription = projDescription;
-        this.projURL = projURL;
+        this.projUrl = projUrl;
         this.projDate = projDate;
         this.projImgUrl = projImgUrl;
     }

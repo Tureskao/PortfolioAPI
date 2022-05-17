@@ -23,7 +23,12 @@ public class User {
     private String userTitle;
     private String userImgUrl;
     
-    @OneToMany(mappedBy="educId")
+    /**/
+    /*Falta implementar la parte de relaciones entre tablas (Es todo lo que
+    está comentado a continuación*/
+    /**/
+    
+    /*@OneToMany(mappedBy="educId")
     private List<Education> educList;
     
     @OneToMany(mappedBy="skillId")
@@ -33,22 +38,33 @@ public class User {
     private List<Experience> expList;
     
     @OneToMany(mappedBy="projId")
-    private List<Project> projList;
+    private List<Project> projList;*/
 
     public User() {
     }
 
-    public User(Long userId, String userName, String userPassword, String userRealName, String userTitle, String userImgUrl, List<Education> educList, List<Skill> skillList, List<Experience> expList, List<Project> projList) {
+    /*También está a continuación lo que falta implementar de relaciones con 
+    otras tablas*/
+    public User(Long userId, 
+            String userName,
+            String userPassword,
+            String userRealName,
+            String userTitle,
+            String userImgUrl
+            /*List<Education> educList,
+            List<Skill> skillList,
+            List<Experience> expList,
+            List<Project> projList*/ ){
         this.userId = userId;
         this.userName = userName;
         this.userPassword = userPassword;
         this.userRealName = userRealName;
         this.userTitle = userTitle;
         this.userImgUrl = userImgUrl;
-        this.educList = educList;
+        /*this.educList = educList;
         this.skillList = skillList;
         this.expList = expList;
-        this.projList = projList;
+        this.projList = projList;*/
     }
     
     

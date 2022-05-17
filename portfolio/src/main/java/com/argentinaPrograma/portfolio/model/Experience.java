@@ -18,18 +18,18 @@ public class Experience {
     @Basic
     private String expTitle;
     private String expDescription;
-    private String expURL;
+    private String expUrl;
     private int expDate;
     private String expImgUrl;  
 
     public Experience() {
     }
 
-    public Experience(Long expId, String expTitle, String expDescription, String expURL, int expDate, String expImgUrl) {
+    public Experience(Long expId, String expTitle, String expDescription, String expUrl, int expDate, String expImgUrl) {
         this.expId = expId;
         this.expTitle = expTitle;
         this.expDescription = expDescription;
-        this.expURL = expURL;
+        this.expUrl = expUrl;
         this.expDate = expDate;
         this.expImgUrl = expImgUrl;
     }
